@@ -1,0 +1,21 @@
+#Sun Jun 06 07:45:57 GMT 2021
+micronaut.application.name: micronautPlayground
+datasources.default:
+  url: jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
+  driverClassName: org.h2.Driver
+  username: sa
+
+graphql:
+  enabled: true #default
+  path: /graphql #default
+  graphiql:
+    enabled: true
+    version: 0.13.2 #default
+    path: /graphiql #default
+#    template-path: classpath:graphiql/index.html #default
+    page-title: GraphiQL
+#  graphql-ws:
+#    enabled: false
+#    path: /graphql-ws
+#    keep-alive-enabled: true
+#    keep-alive-interval: 15s
